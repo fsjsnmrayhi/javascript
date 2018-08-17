@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BASIC JAVASCRIPT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <table align="center">
+    <tr>
+    <td><button class="magic" onclick="Bold()">Bold</button></td> 
+    <td><button class="magic" onclick="Italic()">Italic</button></td> 
+    <td><button class="magic" onclick="Underline()">Underline</button></td>
+   <td> <select class="magic" id="fontsize" onchange="sz()">
+        <option class="magic" value="10px">10</option>
+        <option class="magic" value="20px">20</option>
+        <option class="magic" value="30px">30</option>  
+    </select>
+    </td>
+    <td><select class="magic" id="cat" onchange="at()">
+        <option >arial</option>
+        <option >calibri</option>
+        <option >andalus</option>
+    </select>
+    </td>
+    <td><button class="magic" onclick="Clear()">Clear</button></td>
+</tr>
+</table>
+<div class="deco">
+    <p align="center">
+        We're going to make a program that looks like Microsoft Word.There will be one paragraph and a bunch 
+        of buttons.Each button will have an onclick attribute that will link to a different javascript function.
+    </p>
+    <textarea rows="6" cols="100" class="texte" id="text" placeholder="Write text here"></textarea>
+</div>
+</body>
+        <script src="js/main.js"></script>
+
+</html>
